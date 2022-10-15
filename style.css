@@ -1,0 +1,99 @@
+:root{
+    --black: black;
+    --orange:#fb852b;
+    --orange-hover: #df7d33;
+    --white: white;
+    --blue:#282b33;
+    --tran: .2s;
+}
+.btn{
+    background-color: var(--orange);
+    color: var(--white);
+}
+.btn:hover{
+    background-color: var(--orange-hover);
+    color: var(--white);
+}
+.text-black{
+    color: var(--black);
+}
+.bg-blue{
+    background-color: var(--blue);
+}
+.text-white{
+    color: var(--white);
+}
+.text-orange{
+    color: var(--orange);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+.nav-brand{
+    text-transform: capitalize;
+    font-size: 20px;
+    transition: all var(--tran);
+}
+
+.nav-brand i{
+    color: var(--orange);
+    font-size: 22px;
+}
+.nav-brand:hover{
+    color: var(--orange-hover);
+}
+.hover:hover{
+    color: var(--orange-hover) !important;
+}
+a{
+    color:  var(--orange);
+}
+a:hover{
+    color: var(--orange-hover);
+}
+.before-border::before{
+    content: '';
+    width: 30%;
+    position: absolute;
+    height: 3px;
+    background-color: var(--orange);
+    transition: all var(--tran) ;
+    bottom: 0;
+
+}
+.before-border:hover::before{
+    width: 100%;
+}
+.sec1-a{
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all var(--tran);
+}
+.sec1-a:hover{
+    letter-spacing: 2px;
+}
+.bg-md-orange{
+    background-color: transparent;
+}
+.w-md-50{
+    width: 50%;
+}
+@media (max-width:768px){
+.bg-md-orange{
+    background-color: var(--orange);
+}
+.w-md-50{
+    width: 100%;
+}
+}
+.active{
+    color: var(--orange) !important;
+}
+.detials{
+    background-image: url(./images/vbvbb-min.jpg);
+    background-attachment: fixed;
+}
+.overlay{
+    background-color: rgba(0,0,0,.5);
+}
