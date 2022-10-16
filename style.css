@@ -11,7 +11,7 @@
     color: var(--white);
 }
 .btn:hover{
-    background-color: var(--orange-hover);
+    background-color: var(--orange-hover) !important;
     color: var(--white);
 }
 .text-black{
@@ -64,6 +64,7 @@ a:hover{
 .before-border:hover::before{
     width: 100%;
 }
+
 .sec1-a{
     text-decoration: underline;
     text-transform: uppercase;
@@ -123,4 +124,9 @@ a:hover{
     .sec5-card{
         left: 5% !important;
     }
+    }
+.contact{
+        background-image: url(./images/nmmn-min.jpg);
+        background-attachment: fixed;
+        background-position: center;
     }
