@@ -1,6 +1,6 @@
 :root{
     --black: black;
-    --orange:#fb852b;
+    --orange:#f47935;
     --orange-hover: #df7d33;
     --white: white;
     --blue:#282b33;
@@ -97,3 +97,30 @@ a:hover{
 .overlay{
     background-color: rgba(0,0,0,.5);
 }
+
+.orange-circle{
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--orange);
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+}
+.sec5-img{
+    transform: translateY(-50%);
+    height: 25rem;
+    top: 49%;
+    left: 57%;
+}
+.img-circle{
+    border: 3px solid var(--white);
+}
+
+@media (max-width:400px){
+    .img-circle,.orange-circle{
+        transform: translateX(-30%);
+    }
+    .sec5-card{
+        left: 5% !important;
+    }
+    }
