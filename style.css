@@ -4,7 +4,7 @@
     --orange-hover: #df7d33;
     --white: white;
     --blue:#282b33;
-    --tran: .2s;
+    --tran: .5s;
 }
 .btn{
     background-color: var(--orange);
@@ -93,6 +93,7 @@ a:hover{
 }
 .detials{
     background-image: url(./images/vbvbb-min.jpg);
+    background-position: center;
     background-attachment: fixed;
 }
 .overlay{
@@ -129,4 +130,10 @@ a:hover{
         background-image: url(./images/nmmn-min.jpg);
         background-attachment: fixed;
         background-position: center;
+    }
+    footer li{
+        transition: all var(--tran);
+    }
+    footer li:hover{
+        margin-left: 1rem;
     }
