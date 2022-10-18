@@ -1,139 +1,121 @@
-:root{
-    --black: black;
-    --orange:#f47935;
-    --orange-hover: #df7d33;
-    --white: white;
-    --blue:#282b33;
-    --tran: .5s;
+:root {
+  --black: black;
+  --orange: #f47935;
+  --orange-hover: #df7d33;
+  --white: white;
+  --blue: #282b33;
+  --tran: 0.5s;
 }
-.btn{
-    background-color: var(--orange);
-    color: var(--white);
+.btn {
+  background-color: var(--orange);
+  color: var(--white);
 }
-.btn:hover{
-    background-color: var(--orange-hover) !important;
-    color: var(--white);
+.btn:hover {
+  background-color: var(--orange-hover) !important;
+  color: var(--white);
 }
-.text-black{
-    color: var(--black);
+.text-black {
+  color: var(--black);
 }
-.bg-blue{
-    background-color: var(--blue);
+.bg-blue {
+  background-color: var(--blue);
 }
-.text-white{
-    color: var(--white);
+.text-white {
+  color: var(--white);
 }
-.text-orange{
-    color: var(--orange);
+.text-orange {
+  color: var(--orange);
 }
-.bg-orange{
-    background-color: var(--orange);
-}
-.nav-brand{
-    text-transform: capitalize;
-    font-size: 20px;
-    transition: all var(--tran);
+.bg-orange {
+  background-color: var(--orange);
 }
 
-.nav-brand i{
-    color: var(--orange);
-    font-size: 22px;
+.nav-brand:hover {
+  color: var(--orange-hover);
 }
-.nav-brand:hover{
-    color: var(--orange-hover);
+.hover:hover {
+  color: var(--orange-hover) !important;
 }
-.hover:hover{
-    color: var(--orange-hover) !important;
+a {
+  color: var(--orange);
 }
-a{
-    color:  var(--orange);
+a:hover {
+  color: var(--orange-hover);
 }
-a:hover{
-    color: var(--orange-hover);
+.before-border::before {
+  content: "";
+  width: 30%;
+  position: absolute;
+  height: 3px;
+  background-color: var(--orange);
+  transition: all var(--tran);
+  bottom: 0;
 }
-.before-border::before{
-    content: '';
-    width: 30%;
-    position: absolute;
-    height: 3px;
-    background-color: var(--orange);
-    transition: all var(--tran) ;
-    bottom: 0;
+.before-border:hover::before {
+  width: 100%;
+}
 
+.sec1-a {
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all var(--tran);
 }
-.before-border:hover::before{
+.sec1-a:hover {
+  letter-spacing: 2px;
+}
+.bg-md-orange {
+  background-color: transparent;
+}
+.w-md-50 {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .bg-md-orange {
+    background-color: var(--orange);
+  }
+  .w-md-50 {
     width: 100%;
+  }
+}
+.active {
+  color: var(--orange) !important;
 }
 
-.sec1-a{
-    text-decoration: underline;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all var(--tran);
-}
-.sec1-a:hover{
-    letter-spacing: 2px;
-}
-.bg-md-orange{
-    background-color: transparent;
-}
-.w-md-50{
-    width: 50%;
-}
-@media (max-width:768px){
-.bg-md-orange{
-    background-color: var(--orange);
-}
-.w-md-50{
-    width: 100%;
-}
-}
-.active{
-    color: var(--orange) !important;
-}
-.detials{
-    background-image: url(./images/vbvbb-min.jpg);
-    background-position: center;
-    background-attachment: fixed;
-}
-.overlay{
-    background-color: rgba(0,0,0,.5);
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.orange-circle{
-    width: 15rem;
-    height: 15rem;
-    background-color: var(--orange);
-    border-radius: 50%;
-    position: absolute;
-    left: 40%;
-}
-.sec5-img{
-    transform: translateY(-50%);
-    height: 25rem;
-    top: 49%;
-    left: 57%;
-}
-.img-circle{
-    border: 3px solid var(--white);
+.orange-circle {
+  width: 15rem;
+  height: 15rem;
+  background-color: var(--orange);
+  border-radius: 50%;
+  position: absolute;
+  left: 40%;
 }
 
-@media (max-width:400px){
-    .img-circle,.orange-circle{
-        transform: translateX(-30%);
-    }
-    .sec5-card{
-        left: 5% !important;
-    }
-    }
-.contact{
-        background-image: url(./images/nmmn-min.jpg);
-        background-attachment: fixed;
-        background-position: center;
-    }
-    footer li{
-        transition: all var(--tran);
-    }
-    footer li:hover{
-        margin-left: 1rem;
-    }
+.img-circle {
+  border: 3px solid var(--white);
+}
+
+@media (max-width: 400px) {
+  .img-circle,
+  .orange-circle {
+    transform: translateX(-30%);
+  }
+  .sec5-card {
+    left: 5% !important;
+  }
+}
+.contact {
+  background-image: url(./images/nmmn-min.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+footer li {
+  transition: all var(--tran);
+}
+footer li:hover {
+  margin-left: 1rem;
+}

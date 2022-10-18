@@ -1,8 +1,8 @@
-let copyr=document.getElementById('copyright')
+let copyr = document.getElementById("copyright");
 const d = new Date();
 let year = d.getFullYear();
 
-copyr.innerHTML=`
+copyr.innerHTML = `
 © ${year} Copyright saved: 
 <!-- Github -->
 <a
@@ -13,10 +13,8 @@ copyr.innerHTML=`
   role="button"
   ><i class="fab fa-github"></i
 ></a>
-`
-
-
+`;
 
 setTimeout(() => {
-    alert('يا عمر يا وحش يالي مش مصدقني')
+  alert("يا عمر يا وحش يالي مش مصدقني");
 }, 1000);
