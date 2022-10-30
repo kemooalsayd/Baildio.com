@@ -14,7 +14,3 @@ copyr.innerHTML = `
   ><i class="fab fa-github"></i
 ></a>
 `;
-
-setTimeout(() => {
-  alert("يا عمر يا وحش يالي مش مصدقني");
-}, 1000);
